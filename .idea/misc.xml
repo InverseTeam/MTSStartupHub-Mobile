@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable-v24/edit_text_background_red.xml" value="0.1945" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/background_chat_input.xml" value="0.1" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/background_content_top.xml" value="0.1" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/background_image_add.xml" value="0.1" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/background_image_add_error.xml" value="0.1" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/background_image_add_not.xml" value="0.1925" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/background_recevied_message.xml" value="0.1" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/background_sent_message.xml" value="0.1" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/cursor_style_edit_text.xml" value="0.1945" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/edit_text_background.xml" value="0.1945" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/edit_text_background_error.xml" value="0.1945" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.102" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1945" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/image_background.xml" value="0.1925" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/image_background_error.xml" value="0.1925" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/drawable/item_container_send_message.xml" value="0.1" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/activity_add_events.xml" value="0.28034188034188035" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/activity_application_startup.xml" value="0.2918803418803419" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/activity_chat.xml" value="0.22" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/activity_entry.xml" value="0.12777777777777777" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/activity_finance.xml" value="0.28034188034188035" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/activity_main.xml" value="0.35572916666666665" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/activity_main_menu.xml" value="0.22" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/activity_regestration.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/activity_users_chat.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/activity_uslugi_mtsactivity.xml" value="0.28034188034188035" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/activity_zero.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/fragment_bonus.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/fragment_events.xml" value="0.22" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/fragment_message.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/fragment_profile.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/fragment_startup.xml" value="0.22" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/item_container_received_message.xml" value="0.22" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/item_container_send_message.xml" value="0.22" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/item_user_chat.xml" value="0.29102564102564105" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/list_item_events.xml" value="0.22" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/layout/splash_screen.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/rambl/AndroidStudioProjects/MSH/app/src/main/res/menu/bottom_main_menu.xml" value="0.29508196721311475" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

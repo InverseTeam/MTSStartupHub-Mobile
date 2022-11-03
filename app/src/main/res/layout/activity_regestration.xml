@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegestrationClass"
+    android:background="@color/color_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="-65dp"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginHorizontal="22dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="24sp"
+                        android:textColor="@color/color_text_main"
+                        android:text="@string/registration"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:fontFamily="@font/open_sans"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/color_text_second"
+                        android:text="@string/text_minute_reg"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="25dp"
+                        android:layout_marginHorizontal="25dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/linearImage"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_15sdp">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/imageProfile"
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:scaleType="centerCrop"
+                            app:riv_oval="true"
+                            android:background="@drawable/background_image_add"/>
+
+                        <TextView
+                            android:id="@+id/textAddImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="51dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/text_add_image"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:textColor="@color/color_text_second"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/editRegName"
+                        android:layout_width="match_parent"
+                        android:minHeight="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:layout_marginHorizontal="25dp"
+                        android:hint="@string/text_name"
+                        android:textColorHint="@color/color_text_second"
+                        android:textColor="@color/color_text_for_edit"
+                        android:paddingLeft="20dp"
+                        android:fontFamily="@font/open_sans"
+                        android:textStyle="bold"
+                        android:paddingVertical="10dp"
+                        android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                        android:maxLength="30"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editRegSurname"
+                        android:layout_width="match_parent"
+                        android:minHeight="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:layout_marginHorizontal="25dp"
+                        android:hint="@string/text_surname"
+                        android:textColorHint="@color/color_text_second"
+                        android:textColor="@color/color_text_for_edit"
+                        android:paddingLeft="20dp"
+                        android:fontFamily="@font/open_sans"
+                        android:textStyle="bold"
+                        android:layout_marginTop="17dp"
+                        android:maxLength="30"
+                        android:paddingVertical="10dp"
+                        android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                        android:singleLine="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/editRegMail"
+                        android:layout_width="match_parent"
+                        android:minHeight="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:layout_marginHorizontal="25dp"
+                        android:hint="@string/text_email"
+                        android:textColorHint="@color/color_text_second"
+                        android:textColor="@color/color_text_for_edit"
+                        android:paddingLeft="20dp"
+                        android:fontFamily="@font/open_sans"
+                        android:textStyle="bold"
+                        android:layout_marginTop="17dp"
+                        android:maxLength="60"
+                        android:paddingVertical="10dp"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                    <TextView
+                        android:id="@+id/textErrorEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/color_main"
+                        android:text="@string/text_error_email"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:padding="3dp"
+                        android:layout_marginTop="3dp"
+                        android:visibility="gone"
+                        android:foreground="?attr/selectableItemBackground"/>
+
+                    <EditText
+                        android:id="@+id/editRegPas"
+                        android:layout_width="match_parent"
+                        android:minHeight="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:layout_marginHorizontal="25dp"
+                        android:hint="@string/text_password"
+                        android:textColorHint="@color/color_text_second"
+                        android:textColor="@color/color_text_for_edit"
+                        android:paddingLeft="20dp"
+                        android:fontFamily="@font/open_sans"
+                        android:textStyle="bold"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="5dp"
+                        android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                        android:password="true"
+                        android:maxLength="35"
+                        android:singleLine="true"
+                        android:paddingVertical="10dp"
+                        tools:ignore="Deprecated"
+                        android:inputType="textPassword"/>
+
+                    <TextView
+                        android:id="@+id/textErrorPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/color_main"
+                        android:text="@string/text_error_password"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:padding="3dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="3dp"
+                        android:foreground="?attr/selectableItemBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/buttonCreateAccount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="25dp"
+                            android:backgroundTint="@color/color_main"
+                            android:fontFamily="@font/open_sans"
+                            android:padding="15dp"
+                            android:text="@string/text_create_account"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            app:cornerRadius="35dp"
+                            android:textAllCaps="false"
+                            android:textAppearance="?attr/textAppearanceBody2"/>
+
+                        <ProgressBar
+                            android:id="@+id/progressRegistration"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="center"
+                            android:visibility="invisible"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/color_text_second"
+                        android:text="@string/text_reg_question"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/textClickEntry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/color_main"
+                        android:text="@string/text_entry_in_account"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:padding="3dp"
+                        android:foreground="?attr/selectableItemBackground"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

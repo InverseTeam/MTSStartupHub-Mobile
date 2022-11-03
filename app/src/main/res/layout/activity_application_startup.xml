@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.ApplicationStartupActivity"
+    android:background="@color/color_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="-65dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="65dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="25dp"
+                            android:weightSum="1"
+                            android:layout_marginHorizontal="22dp">
+
+                            <ImageButton
+                                android:id="@+id/imageButtonBackAppStartup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:baselineAligned="false"
+                                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="24sp"
+                                android:textColor="@color/color_text_main"
+                                android:text="@string/text_startup_participation"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:paddingLeft="-48dp"
+                                android:fontFamily="@font/open_sans"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="25dp">
+
+                            <EditText
+                                android:id="@+id/editStartName"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:layout_marginHorizontal="25dp"
+                                android:hint="@string/text_name"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                                android:maxLength="30"/>
+
+                            <EditText
+                                android:id="@+id/editStartSurname"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:layout_marginHorizontal="25dp"
+                                android:hint="@string/text_surname"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:layout_marginTop="17dp"
+                                android:maxLength="30"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                            <EditText
+                                android:id="@+id/editStartSecondName"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:layout_marginHorizontal="25dp"
+                                android:hint="@string/text_second_name"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:layout_marginTop="17dp"
+                                android:maxLength="30"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                            <EditText
+                                android:id="@+id/editStartNumber"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:layout_marginHorizontal="25dp"
+                                android:hint="@string/text_number_phone"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:layout_marginTop="17dp"
+                                android:maxLength="11"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                            <EditText
+                                android:id="@+id/editStartMail"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:layout_marginHorizontal="25dp"
+                                android:hint="@string/text_email"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:layout_marginTop="17dp"
+                                android:maxLength="50"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                            <EditText
+                                android:id="@+id/editStartCountry"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:layout_marginHorizontal="25dp"
+                                android:hint="@string/text_counrty"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:layout_marginTop="17dp"
+                                android:maxLength="20"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginHorizontal="22dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textSize="24sp"
+                                android:textColor="@color/color_text_main"
+                                android:text="@string/text_startup_info"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:fontFamily="@font/open_sans"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginHorizontal="25dp">
+
+                                <EditText
+                                    android:id="@+id/editStartPartProgram"
+                                    android:layout_width="match_parent"
+                                    android:minHeight="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edit_text_background"
+                                    android:hint="@string/text_startup_participation_program"
+                                    android:textColorHint="@color/color_text_second"
+                                    android:textColor="@color/color_text_for_edit"
+                                    android:paddingLeft="20dp"
+                                    android:fontFamily="@font/open_sans"
+                                    android:textStyle="bold"
+                                    android:paddingVertical="10dp"
+                                    android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                                    android:maxLength="30"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/color_text_under_button"
+                                    android:text="@string/text_under_button_application"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/open_sans"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="5dp"/>
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/editStartProjectName"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:layout_marginHorizontal="25dp"
+                                android:hint="@string/text_name_project"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:layout_marginTop="15dp"
+                                android:maxLength="30"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                            <EditText
+                                android:id="@+id/editStartWebsite"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:layout_marginHorizontal="25dp"
+                                android:hint="@string/text_name_website"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:layout_marginTop="17dp"
+                                android:maxLength="30"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginHorizontal="25dp">
+
+                                <EditText
+                                    android:id="@+id/editStartStage"
+                                    android:layout_width="match_parent"
+                                    android:minHeight="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edit_text_background"
+                                    android:hint="@string/text_readiness_stage"
+                                    android:textColorHint="@color/color_text_second"
+                                    android:textColor="@color/color_text_for_edit"
+                                    android:paddingLeft="20dp"
+                                    android:fontFamily="@font/open_sans"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="17dp"
+                                    android:maxLength="11"
+                                    android:paddingVertical="10dp"
+                                    android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/color_text_under_button"
+                                    android:text="@string/text_under_button_stage"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/open_sans"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="5dp"/>
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/editStartDescrip"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:layout_marginHorizontal="25dp"
+                                android:hint="@string/text_description_project"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:layout_marginTop="15dp"
+                                android:maxLength="3000"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                            <EditText
+                                android:id="@+id/editStartPresent"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:layout_marginHorizontal="25dp"
+                                android:hint="@string/text_presentation_project"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:layout_marginTop="17dp"
+                                android:maxLength="20"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                            <EditText
+                                android:id="@+id/editStartDopMaterials"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:layout_marginHorizontal="25dp"
+                                android:hint="@string/text_dop_materials"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:layout_marginTop="17dp"
+                                android:maxLength="20"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center|bottom">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/buttonStartSubmit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:backgroundTint="@color/color_main"
+                                android:fontFamily="@font/open_sans"
+                                android:padding="15dp"
+                                android:text="@string/text_button_submit"
+                                android:textColor="@color/white"
+                                android:textSize="18dp"
+                                app:cornerRadius="35dp"
+                                android:textAllCaps="false"
+                                android:textAppearance="?attr/textAppearanceBody2"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

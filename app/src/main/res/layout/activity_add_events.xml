@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddEventsActivity"
+    android:orientation="vertical"
+    android:background="@color/color_main">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="60dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="10dp"
+        android:layout_marginBottom="-65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginHorizontal="22dp"
+                        android:weightSum="1">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonBackAppEvents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:baselineAligned="false"
+                            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:textColor="@color/color_text_main"
+                            android:text="@string/text_events"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:paddingLeft="-48dp"
+                            android:fontFamily="@font/open_sans"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="25dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="25dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/color_text_under_button"
+                                android:text="@string/text_events_area"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/open_sans"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <EditText
+                                android:id="@+id/editEventsArea"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                                android:maxLength="20"
+                                android:singleLine="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/color_text_under_button"
+                                android:text="@string/text_description_events"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/open_sans"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <EditText
+                                android:id="@+id/editEventsDescription"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                                android:maxLength="3000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/color_text_under_button"
+                                android:text="@string/text_tasks_events"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/open_sans"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <EditText
+                                android:id="@+id/editTasksDescription"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                                android:maxLength="3000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/color_text_under_button"
+                                android:text="@string/text_participants_events"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/open_sans"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <EditText
+                                android:id="@+id/editParticipantsDescription"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                                android:maxLength="30"
+                                android:singleLine="true"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/color_text_under_button"
+                                android:text="@string/text_equipment_events"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/open_sans"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <EditText
+                                android:id="@+id/editEquipmentDescription"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                                android:maxLength="300"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/color_text_under_button"
+                                android:text="@string/text_date_events"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/open_sans"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <EditText
+                                android:id="@+id/editDateDescription"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                                android:maxLength="10"
+                                android:singleLine="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/color_text_under_button"
+                                android:text="@string/text_time_events"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/open_sans"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <EditText
+                                android:id="@+id/editTimeDescription"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                                android:maxLength="5"
+                                android:singleLine="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/color_text_under_button"
+                                android:text="@string/text_dopinfo_events"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/open_sans"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <EditText
+                                android:id="@+id/editDopinfoDescription"
+                                android:layout_width="match_parent"
+                                android:minHeight="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background"
+                                android:textColorHint="@color/color_text_second"
+                                android:textColor="@color/color_text_for_edit"
+                                android:paddingLeft="20dp"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:paddingVertical="10dp"
+                                android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                                android:maxLength="3000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/color_text_under_button"
+                                android:text="@string/text_banner_events"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/open_sans"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                app:cardElevation="0dp"
+                                app:cardCornerRadius="40dp">
+
+                                <ImageView
+                                    android:id="@+id/imageAddBannerEvents"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:background="@color/color_edit_text"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textAddImageEvents"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="51dp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/open_sans"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="@string/text_add_image"
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:textColor="@color/color_text_second"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center|bottom">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/buttonEventsSubmit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:backgroundTint="@color/color_main"
+                                android:fontFamily="@font/open_sans"
+                                android:padding="15dp"
+                                android:text="@string/text_button_submit"
+                                android:textColor="@color/white"
+                                android:textSize="18dp"
+                                app:cornerRadius="35dp"
+                                android:textAllCaps="false"
+                                android:textAppearance="?attr/textAppearanceBody2"/>
+
+                                <ProgressBar
+                                    android:id="@+id/progressEventsAdd"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_gravity="center"
+                                    android:visibility="invisible"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

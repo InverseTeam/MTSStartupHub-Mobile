@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "220677071556",
+    "project_id": "mts-startup-hub-e09dc",
+    "storage_bucket": "mts-startup-hub-e09dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220677071556:android:a901b2019ee8432f391f91",
+        "android_client_info": {
+          "package_name": "ramble.sokol.msh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220677071556-f6aephvmnv9anajsj7sgtf0lrllcduna.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3-vPQ2a2Sp3aL_2s04NbAShO3qrCs-mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220677071556-f6aephvmnv9anajsj7sgtf0lrllcduna.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
